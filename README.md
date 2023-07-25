@@ -1,3 +1,4 @@
+```
 apt update
 apt upgrade -y
 apt install nvidia-cuda-toolkit -y
@@ -12,3 +13,4 @@ echo 'CUDNN_PATH=$(dirname $(python -c "import nvidia.cudnn;print(nvidia.cudnn._
 echo 'export LD_LIBRARY_PATH=$CONDA_PREFIX/lib/:$CUDNN_PATH/lib:$LD_LIBRARY_PATH' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 pip install --upgrade pip
 pip install tensorflow==2.12.*
+```
